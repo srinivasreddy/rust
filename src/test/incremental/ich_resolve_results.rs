@@ -15,7 +15,7 @@
 
 #![feature(rustc_attrs)]
 
-fn test<T>() { }
+fn test<T>() {}
 
 mod mod1 {
     pub struct Foo(pub u32);
@@ -71,4 +71,4 @@ mod mod3 {
     }
 }
 
-fn main() { }
+fn main() {}

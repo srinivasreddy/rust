@@ -21,9 +21,9 @@
 // Between revisions 1 and 2, we are changing the debuginfo-level, which should
 // invalidate the cache. Between revisions 2 and 3, we are adding `--verbose`
 // which should have no effect on the cache:
-//[rpass1] compile-flags: -C debuginfo=0
-//[rpass2] compile-flags: -C debuginfo=2
-//[rpass3] compile-flags: -C debuginfo=2 --verbose
+// [rpass1] compile-flags: -C debuginfo=0
+// [rpass2] compile-flags: -C debuginfo=2
+// [rpass3] compile-flags: -C debuginfo=2 --verbose
 
 pub fn main() {
     // empty

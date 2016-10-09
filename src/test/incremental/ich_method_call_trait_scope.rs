@@ -15,19 +15,19 @@
 
 #![feature(rustc_attrs)]
 
-fn test<T>() { }
+fn test<T>() {}
 
 trait Trait1 {
-    fn method(&self) { }
+    fn method(&self) {}
 }
 
-impl Trait1 for () { }
+impl Trait1 for () {}
 
 trait Trait2 {
-    fn method(&self) { }
+    fn method(&self) {}
 }
 
-impl Trait2 for () { }
+impl Trait2 for () {}
 
 #[cfg(rpass1)]
 mod mod3 {
@@ -57,4 +57,4 @@ mod mod3 {
     }
 }
 
-fn main() { }
+fn main() {}

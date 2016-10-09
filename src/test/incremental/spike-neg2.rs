@@ -26,7 +26,8 @@
 
 mod x {
     pub struct X {
-        x: u32, y: u32,
+        x: u32,
+        y: u32,
     }
 
     #[cfg(rpass1)]

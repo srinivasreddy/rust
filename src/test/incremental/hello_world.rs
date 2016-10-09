@@ -14,7 +14,7 @@
 #![allow(warnings)]
 #![feature(rustc_attrs)]
 
-fn main() { }
+fn main() {}
 
 mod x {
     #[cfg(rpass1)]

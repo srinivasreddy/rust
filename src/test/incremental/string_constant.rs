@@ -18,7 +18,7 @@
 // Therefore, the compiler deduces (correctly) that typeck is not
 // needed even for callers of `x`.
 
-fn main() { }
+fn main() {}
 
 mod x {
     #[cfg(rpass1)]

@@ -15,12 +15,12 @@
 #![feature(rustc_attrs)]
 #![rustc_partition_reused(module="krate_inherent-x", cfg="rpass2")]
 
-fn main() { }
+fn main() {}
 
 mod x {
     struct Foo;
     impl Foo {
-        fn foo(&self) { }
+        fn foo(&self) {}
     }
 
     fn method() {
@@ -30,5 +30,4 @@ mod x {
 }
 
 #[cfg(rpass1)]
-fn bar() { } // remove this unrelated fn in rpass2, which should not affect `x::method`
-
+fn bar() {} // remove this unrelated fn in rpass2, which should not affect `x::method`

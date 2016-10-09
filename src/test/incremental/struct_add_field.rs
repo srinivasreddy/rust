@@ -24,11 +24,11 @@ pub struct X {
 }
 
 pub struct EmbedX {
-    x: X
+    x: X,
 }
 
 pub struct Y {
-    pub y: char
+    pub y: char,
 }
 
 #[rustc_dirty(label="TypeckItemBody", cfg="rpass2")]
@@ -46,4 +46,4 @@ pub fn use_Y() {
     let x: Y = Y { y: 'c' };
 }
 
-pub fn main() { }
+pub fn main() {}

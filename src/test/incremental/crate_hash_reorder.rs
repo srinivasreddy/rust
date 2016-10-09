@@ -18,10 +18,8 @@
 // Check that reordering otherwise identical items is not considered a
 // change at all.
 #[rustc_clean(label="Krate", cfg="rpass2")]
-
 // But removing an item, naturally, is.
 #[rustc_dirty(label="Krate", cfg="rpass3")]
-
 #[cfg(rpass1)]
 pub struct X {
     pub x: u32,
@@ -36,4 +34,4 @@ pub struct X {
     pub x: u32,
 }
 
-pub fn main() { }
+pub fn main() {}

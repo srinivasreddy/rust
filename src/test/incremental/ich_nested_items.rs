@@ -17,20 +17,20 @@
 
 #[cfg(rpass1)]
 fn foo() {
-    fn bar() { }
-    fn baz() { }
+    fn bar() {}
+    fn baz() {}
 }
 
 #[cfg(rpass2)]
 #[rustc_clean(label="Hir", cfg="rpass2")]
 fn foo() {
     #[rustc_clean(label="Hir", cfg="rpass2")]
-    fn baz() { } // order is different...
+    fn baz() {} // order is different...
 
     #[rustc_clean(label="Hir", cfg="rpass2")]
-    fn bar() { } // but that doesn't matter.
+    fn bar() {} // but that doesn't matter.
 
-    fn bap() { } // neither does adding a new item
+    fn bap() {} // neither does adding a new item
 }
 
-fn main() { }
+fn main() {}
